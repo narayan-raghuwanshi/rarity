@@ -35,7 +35,7 @@ const Form = () => {
     }
     const validation = requestSchema.safeParse(body);
     if (validation.success) {
-      const response = await fetch("https://rarity-beige.vercel.app/api/request", {
+      const response = await fetch("http://localhost:3000/api/request", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
