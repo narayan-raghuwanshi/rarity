@@ -3,20 +3,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { z } from "zod"
 import { useRouter } from 'next/navigation';
-
-const phoneRegex = new RegExp(
-  /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
-);
-
-const requestSchema = z.object({
-  name: z.string(),
-  bookName: z.string(),
-  author: z.string(),
-  email: z.string().email(),
-  phone: z.string().regex(phoneRegex, 'Please enter a valid number.'),
-});
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -26,25 +13,21 @@ const Form = () => {
   const [phone, setPhone] = useState("+91");
   const router = useRouter();
   const handleRequest = async () => {
-    const body = {
-      name: name,
-      bookName: bookName,
-      author: author,
-      email: email,
-      phone: phone
-    }
-    const validation = requestSchema.safeParse(body);
-    if (validation.success) {
-      const response = await fetch("http://localhost:3000/api/request", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(body)
+    const response = await fetch("http://localhost:3000/api/request", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: name,
+        bookName: bookName,
+        author: author,
+        email: email,
+        phone: phone
       })
-      if (response.status === 200) {
-        router.push('/thankyou');
-      }
+    })
+    if (response.status === 200) {
+      router.push('/thankyou');
     } else {
       alert("Enter valid details!");
     }

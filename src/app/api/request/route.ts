@@ -12,9 +12,9 @@ export async function POST(request: NextRequest) {
   await prisma.user.create({
     data: {
       name: body.name,
-      email: body.email,
       bookName: body.bookName,
       author: body.author,
+      email: body.email,
       phone: body.phone,
     },
   });
