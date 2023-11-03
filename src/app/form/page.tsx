@@ -13,22 +13,22 @@ const Form = () => {
   const [phone, setPhone] = useState("+91");
   const router = useRouter();
   const handleRequest = async () => {
-    const response = await fetch("http://localhost:3000/api/request", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        name: name,
-        bookName: bookName,
-        author: author,
-        email: email,
-        phone: phone
+      const response = await fetch("http://localhost:3000/api/request", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name: name,
+          bookName: bookName,
+          author: author,
+          email: email,
+          phone: phone
+        })
       })
-    })
-    if (response.status === 200) {
-      router.push('/thankyou');
-    } else {
+      if (response.status === 200) {
+        router.push('/thankyou');
+      }else {
       alert("Enter valid details!");
     }
   }
