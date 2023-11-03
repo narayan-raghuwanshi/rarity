@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) web application built with [Tailwind CSS](https://tailwindcss.com/) for styling and [Prisma](https://www.prisma.io/docs/getting-started/quickstart) as the ORM to interact with a PostgreSQL database. The purpose of this application is to allow users to make requests for books that they are finding difficult to find. Users can submit their book requests, and administrators can manage and fulfill those requests.
+
+
+## Table of Contents
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Environment Variables](#environment-variables)
+- [License](#license)
+
+## Features
+
+- User with the ability to submit and manage book requests
+- Responsive design using Tailwind CSS
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js and npm installed.
+- PostgreSQL database set up and running.
+- A Prisma schema file configured with your database connection.
+- Tailwind CSS for styling.
 
 ## Getting Started
 
-First, run the development server:
-
+```bash
+git clone https://github.com/narayan-raghuwanshi/rarity.git
+```
+```bash
+cd rarity
+```
+```bash
+npm install
+# or
+yarn install
+```
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project's codebase is structured as follows to maintain a clear and organized development process:
 
-## Learn More
+- `/prisma`
+  -`/prisma/migrations`
+- `/public`
+- `/src`
+  -`/src/app`
 
-To learn more about Next.js, take a look at the following resources:
+## Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This application relies on several environment variables to configure its settings and secrets. You should define these environment variables either in a `.env` file or directly in your deployment environment. Below is a list of the required environment variables and their descriptions:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- `DATABASE_URL`
+- `DIRECT_URL`
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License
