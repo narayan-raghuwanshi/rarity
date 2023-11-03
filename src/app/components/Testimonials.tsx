@@ -74,7 +74,7 @@ const Testimonials = () => {
             </div>
 
             <p className="mt-4 text-gray-700">
-            I love rare books, and this website is a goldmine for hard-to-find ones. They deliver quickly and safely. If you're into unique books, check it out!
+            I love rare books, and this website is a goldmine for hard to find ones. They deliver quickly and safely. If you are into unique books, check it out.
             </p>
           </blockquote>
 
@@ -145,7 +145,7 @@ const Testimonials = () => {
             </div>
 
             <p className="mt-4 text-gray-700">
-            I used to search for rare books in old shops, but this website makes it easy. They have a huge collection, and their deliveries are safe. If you love unique books, you'll love this site.
+            I used to search for rare books in old shops, but this website makes it easy. They have a huge collection, and their deliveries are safe. If you love unique books, you will love this site.
             </p>
           </blockquote>
 
@@ -216,7 +216,7 @@ const Testimonials = () => {
             </div>
 
             <p className="mt-4 text-gray-700">
-            This website is a dream for book lovers. They find rare books and send them safely. If you're into hard-to-find books, give it a try!
+            This website is a dream for book lovers. They find rare books and send them safely. If you are into hard-to-find books, give it a try.
             </p>
           </blockquote>
         </div>
