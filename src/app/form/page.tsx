@@ -13,7 +13,7 @@ const Form = () => {
   const [phone, setPhone] = useState("+91");
   const router = useRouter();
   const handleRequest = async () => {
-      const response = await fetch("http://localhost:3000/api/request", {
+      const response = await fetch("/api/request", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -91,10 +91,10 @@ const Form = () => {
               <p className="text-gray-400">abc@gmail.com</p>
             </div>
             <div className="flex my-4">
-              <Link href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="h-8 w-8 mx-1 pt-1">
+              <Link href="https://www.linkedin.com/in/narayan-raghuwanshi-4589b4290/" target="_blank" rel="noreferrer" className="h-8 w-8 mx-1 pt-1">
                 <FontAwesomeIcon icon={faInstagram} className='text-3xl' />
               </Link>
-              <Link href="https://www.linkedin.com/company/enlighteneering-inc-" target="_blank" rel="noreferrer" className="h-8 w-8 ml-3 pt-1">
+              <Link href="https://www.linkedin.com/in/narayan-raghuwanshi-4589b4290/" target="_blank" rel="noreferrer" className="h-8 w-8 ml-3 pt-1">
                 <FontAwesomeIcon icon={faLinkedinIn} className='text-3xl' />
               </Link>
             </div>
