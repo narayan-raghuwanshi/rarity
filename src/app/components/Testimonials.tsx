@@ -11,7 +11,9 @@ const Testimonials = () => {
             <div className="flex items-center gap-4">
               <Image
                 alt="Man"
-                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                width={56}
+                height={56}
+                src="/ayush-testimonial-image.png"
                 className="h-14 w-14 rounded-full object-cover"
               />
 
@@ -74,7 +76,7 @@ const Testimonials = () => {
             </div>
 
             <p className="mt-4 text-gray-700">
-            I love rare books, and this website is a goldmine for hard to find ones. They deliver quickly and safely. If you are into unique books, check it out.
+              I love rare books, and this website is a goldmine for hard to find ones. They deliver quickly and safely. If you are into unique books, check it out.
             </p>
           </blockquote>
 
@@ -82,7 +84,9 @@ const Testimonials = () => {
             <div className="flex items-center gap-4">
               <Image
                 alt="Man"
-                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                src="/shubham-testimonial-image.png"
+                width={56}
+                height={56}
                 className="h-14 w-14 rounded-full object-cover"
               />
 
@@ -145,7 +149,7 @@ const Testimonials = () => {
             </div>
 
             <p className="mt-4 text-gray-700">
-            I used to search for rare books in old shops, but this website makes it easy. They have a huge collection, and their deliveries are safe. If you love unique books, you will love this site.
+              I used to search for rare books in old shops, but this website makes it easy. They have a huge collection, and their deliveries are safe. If you love unique books, you will love this site.
             </p>
           </blockquote>
 
@@ -153,7 +157,9 @@ const Testimonials = () => {
             <div className="flex items-center gap-4">
               <Image
                 alt="Man"
-                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                width={56}
+                height={56}
+                src="/narayan-testimonial-image.png"
                 className="h-14 w-14 rounded-full object-cover"
               />
 
@@ -216,7 +222,7 @@ const Testimonials = () => {
             </div>
 
             <p className="mt-4 text-gray-700">
-            This website is a dream for book lovers. They find rare books and send them safely. If you are into hard-to-find books, give it a try.
+              This website is a dream for book lovers. They find rare books and send them safely. If you are into hard-to-find books, give it a try.
             </p>
           </blockquote>
         </div>
